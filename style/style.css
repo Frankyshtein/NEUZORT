@@ -1,0 +1,109 @@
+body {
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff; }
+
+.block {
+  background: #663399;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 0;
+  overflow: hidden; }
+  .block .back {
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    opacity: 0.4; }
+  .block .container {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-top: 3%;
+    position: relative;
+    height: 100vh;
+    z-index: 1;
+    margin: 0 auto;
+    width: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .block .container img {
+      width: 1em; }
+    .block .container .back {
+      position: absolute;
+      width: 136%;
+      opacity: 1;
+      bottom: -15%;
+      left: -18%; }
+    .block .container > p {
+      width: 100%;
+      text-align: center;
+      z-index: inherit;
+      margin-top: 43%; }
+    .block .container div {
+      width: 49%;
+      z-index: 1; }
+    .block .container .logo {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; }
+      .block .container .logo img {
+        width: 1.5em; }
+      .block .container .logo span {
+        font-size: 1.5em;
+        margin-left: 0.7em;
+        font-weight: bold; }
+    .block .container .menu {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; }
+      .block .container .menu .button {
+        width: auto; }
+      .block .container .menu .search img {
+        width: 1em; }
+      .block .container .menu .menuIcon {
+        background: url("../img/menu.png") no-repeat;
+        width: 1rem;
+        height: 1rem;
+        font: 0/0 a; }
+      .block .container .menu span {
+        margin-left: 0.8em; }
+    .block .container .button {
+      background: #f64340;
+      width: 12%;
+      height: 3.4em;
+      border-radius: 1.7em;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      padding-right: 1.4em;
+      padding-left: 1.4em; }
+      .block .container .button p {
+        margin-left: 0.5em; }
+    .block .container .mrLeft {
+      margin-left: 32%;
+      margin-bottom: 6%; }
+    .block .container .mrRight {
+      margin-right: 32%; }

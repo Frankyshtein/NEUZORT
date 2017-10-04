@@ -117,5 +117,32 @@ body {
     .block .container .mrRight {
       margin-right: 32%; }
 
-.block .container {
+#container {
   display: none; }
+
+.block2 {
+  background: #fff;
+  color: #000;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  .block2 .rectangle {
+    width: 4rem;
+    height: 0.2rem;
+    background: #f64340;
+    margin: 0 auto; }
+  .block2 > div > p {
+    font-size: 2em;
+    font-weight: bold; }
+  .block2 .container {
+    padding: 0;
+    height: auto; }
+    .block2 .container div {
+      width: 30%; }

@@ -17,27 +17,18 @@ body {
     z-index: 0;
     opacity: 0.4; }
   .block .container {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     padding-top: 3%;
     position: relative;
     height: 100vh;
     z-index: 1;
     margin: 0 auto;
     width: 70%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -ms-flex-line-pack: justify;
-        align-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: space-between;
+    flex-wrap: wrap; }
     .block .container img {
       width: 1em; }
     .block .container .back {
@@ -55,15 +46,9 @@ body {
       width: 49%;
       z-index: 1; }
     .block .container .logo {
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-pack: start;
-          -ms-flex-pack: start;
-              justify-content: flex-start; }
+      align-items: center;
+      justify-content: flex-start; }
       .block .container .logo img {
         width: 2.5em; }
       .block .container .logo span {
@@ -71,15 +56,9 @@ body {
         margin-left: 0.7em;
         font-weight: bold; }
     .block .container .menu {
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: end;
-          -ms-flex-pack: end;
-              justify-content: flex-end;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; }
+      justify-content: flex-end;
+      align-items: center; }
       .block .container .menu .button {
         width: auto; }
       .block .container .menu a {
@@ -98,15 +77,9 @@ body {
       width: 12%;
       height: 3.4em;
       border-radius: 1.7em;
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
+      align-items: center;
+      justify-content: center;
       padding-right: 1.4em;
       padding-left: 1.4em; }
       .block .container .button p {
@@ -124,15 +97,9 @@ body {
   background: #fff;
   color: #000;
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
+  flex-direction: column;
+  justify-content: space-around; }
   .block2 .rectangle {
     width: 4rem;
     height: 0.2rem;
@@ -144,5 +111,7 @@ body {
   .block2 .container {
     padding: 0;
     height: auto; }
+    .block2 .container img {
+      width: 50%; }
     .block2 .container div {
       width: 30%; }

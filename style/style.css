@@ -1,7 +1,8 @@
 body {
   font-size: 12px;
   font-family: 'Open Sans', sans-serif;
-  color: #fff; }
+  color: #fff;
+  min-width: 1000px; }
 
 .block {
   background: #663399;
@@ -16,6 +17,8 @@ body {
     position: absolute;
     z-index: 0;
     opacity: 0.4; }
+  .block .back2 {
+    height: auto; }
   .block .container {
     box-sizing: border-box;
     padding-top: 3%;
@@ -101,17 +104,30 @@ body {
   flex-direction: column;
   justify-content: space-around; }
   .block2 .rectangle {
-    width: 4rem;
-    height: 0.2rem;
+    width: 3.8rem;
+    height: 0.19rem;
     background: #f64340;
     margin: 0 auto; }
   .block2 > div > p {
     font-size: 2em;
-    font-weight: bold; }
+    font-weight: bold;
+    margin-bottom: 2%; }
   .block2 .container {
     padding: 0;
     height: auto; }
     .block2 .container img {
-      width: 50%; }
+      width: auto;
+      height: 30%;
+      margin-bottom: 10%; }
     .block2 .container div {
-      width: 30%; }
+      width: 30%;
+      height: 40%; }
+      .block2 .container div p {
+        margin-bottom: 6%;
+        font-size: 1.4em;
+        font-weight: bold; }
+        .block2 .container div p:last-child {
+          font-size: 1.4em;
+          color: #666666;
+          font-weight: 500;
+          line-height: 1.6em; }

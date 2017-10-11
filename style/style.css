@@ -150,4 +150,9 @@ body {
       justify-content: space-around;
       z-index: 2; }
       .block2 .slider .slides img {
-        width: 10%; }
+        width: 10%;
+        margin-bottom: -4%;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); }
+        .block2 .slider .slides img:nth-child(4) {
+          margin-bottom: 0;
+          box-shadow: none; }

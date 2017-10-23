@@ -171,8 +171,6 @@ body {
     .slider {
         margin-bottom:12%;
         position: relative;
-//        overflow: hidden;
-//        height:50%;
         .frame {
             position: absolute;
             width: 100%;
@@ -183,22 +181,21 @@ body {
             justify-content: center;
             img {
                 width:10.9%;
-
             }
         }
         .slides {
-            position: relative;
-//            width:50% !important;
+            position: absolute;
+            height:100%;
+            $widthh:200%;
+            width:$widthh;
+            left: 50% - $widthh / 2;
             display: flex;
             align-items: center;
             justify-content:space-between;
             z-index: 2;
             img {
-                width: 10%;
-                box-shadow:  2px 2px 4px rgba( 0, 0, 0, 0.5 );
-                &:nth-child(4) {
-                    box-shadow: none;
-                }
+                width: 5%;
+//                box-shadow:  2px 2px 4px rgba( 0, 0, 0, 0.5 );
             }
 
         }

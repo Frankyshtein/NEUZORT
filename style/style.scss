@@ -188,7 +188,7 @@ body {
             height:100%;
             $widthh:200%;
             width:$widthh;
-            left: 50% - $widthh / 2;
+            left: -50%;
             display: flex;
             align-items: center;
             justify-content:space-between;

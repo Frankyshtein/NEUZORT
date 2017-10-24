@@ -7,8 +7,8 @@ $(document).ready(function () {
 //   \|/
 var slides = $(".block .slider .slides img");
 var middlePoint = slides.length / 2 | 0;
-slides.slice(0, middlePoint).clone().prependTo($(".block .slider .slides"));
-slides.slice(middlePoint + 1, slides.length).clone().appendTo($(".block .slider .slides"));
+slides.slice(0, middlePoint).clone().appendTo($(".block .slider .slides"));
+slides.slice(middlePoint + 1, slides.length).clone().prependTo($(".block .slider .slides"));
 slides = $(".block .slider .slides img");
 middlePoint = slides.length / 2 | 0;
 console.log(middlePoint);

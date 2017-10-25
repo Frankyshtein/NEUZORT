@@ -186,15 +186,15 @@ body {
         .slides {
             position: absolute;
             height:100%;
-            $widthh:200%;
+            $widthh:271%;
             width:$widthh;
-            left: -50%;
+            left: 50%-($widthh/2);
             display: flex;
             align-items: center;
             justify-content:space-between;
             z-index: 2;
             img {
-                width: 5%;
+                width:3.71%;
 //                box-shadow:  2px 2px 4px rgba( 0, 0, 0, 0.5 );
             }
 

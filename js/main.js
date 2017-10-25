@@ -7,37 +7,32 @@ $(document).ready(function () {
 //   \|/
 var slides = $(".block .slider .slides img");
 var middlePoint = slides.length / 2 | 0;
-slides.slice(0, middlePoint).clone().appendTo($(".block .slider .slides"));
-slides.slice(middlePoint + 1, slides.length).clone().prependTo($(".block .slider .slides"));
+slides.slice(0, slides.length - 1).clone().appendTo($(".block .slider .slides"));
+slides.slice(1, slides.length).clone().prependTo($(".block .slider .slides"));
+$(".block .slides img:first-child").addClass("leftEdge");
+$(".block .slides img:last-child").addClass("rightEdge");
 slides = $(".block .slider .slides img");
-middlePoint = slides.length / 2 | 0;
-$(".block .slides img:nth("+middlePoint+")").clone().appendTo($(".block .slider .slides"));
-$(".block .slides img:nth("+middlePoint+")").clone().prependTo($(".block .slider .slides"));
-slides = $(".block .slider .slides img");
-middlePoint = slides.length / 2 | 0;
-console.log(middlePoint);
-$(".block .slides img:nth-child(" + (middlePoint + 1) + ")").css("box-shadow", "none");
+middlePoint = Math.round(slides.length / 2);
 
 function slide() {
-    slides = $(".block .slider .slides img");
-    middlePoint = Math.round(slides.length / 2);
-    var steps = middlePoint - $(this).index()-1;
-    console.log(steps);
+    var steps = middlePoint - ($(this).index() + 1);
+    console.log($(this).index());
+    console.log(($(".slider").css("width").slice(0, -2) / 2 - $(".slides").css("width").slice(0, -2) / 2) + "px");
+
     if (steps > 0) {
+        if ($(this).hasClass("leftEdge")) {
+            $(".block .slides").css("left", ($(".slider").css("width").slice(0, -2) / 2 - $(".slides").css("width").slice(0, -2) / 2 - 14.496) + "px");
+        }
         $(".block .slides").animate({
-            left: (-50+15.84 * steps) + "%"
-        }, 400,function(){
-            slides.slice(slides.length-steps,slides.length).prependTo($(".block .slider .slides"));
-            $(".block .slides").css("left","-50%");
-        });
-        console.log(slides.slice(slides.length-steps,slides.length));
-    }else {
-        $(".block .slides").animate({left: (-50+15.84 * steps) + "%"}, 400,function(){
-            slides.slice(0,-steps).appendTo($(".block .slider .slides"));
-            $(".block .slides").css("left","-50%");
-        });
+            left: "+=" + (14.496 * steps) + "%"
+        }, 400);
+        middlePoint = $(this).index() + 1;
+    } else {
+        $(".block .slides").animate({
+            left: "+=" + (14.496 * steps) + "%"
+        }, 400, );
+        middlePoint = $(this).index() + 1;
     }
-//    $(".block .slides img:nth-child(" + middlePoint + ")").css("box-shadow", "none");
 }
 $(".block .slider .slides img").on('click', slide);
 

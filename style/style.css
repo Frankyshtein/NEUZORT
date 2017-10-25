@@ -146,11 +146,11 @@ body {
     .block2 .slider .slides {
       position: absolute;
       height: 100%;
-      width: 200%;
-      left: -50%;
+      width: 271%;
+      left: -85.5%;
       display: flex;
       align-items: center;
       justify-content: space-between;
       z-index: 2; }
       .block2 .slider .slides img {
-        width: 5%; }
+        width: 3.71%; }

@@ -4,7 +4,7 @@ body {
     font-size: 12px;
     font-family: 'Open Sans', sans-serif;
     color: #fff;
-//    min-width: 1000px;
+    //    min-width: 1000px;
 }
 
 .block {
@@ -22,7 +22,7 @@ body {
         opacity: 0.4;
     }
     .back2 {
-        height:auto;
+        height: auto;
     }
     .container {
         box-sizing: border-box;
@@ -141,7 +141,7 @@ body {
     & > div > p {
         font-size: 2em;
         font-weight: bold;
-        margin-bottom:2%;
+        margin-bottom: 2%;
     }
     .container {
         padding: 0;
@@ -157,11 +157,11 @@ body {
             p {
                 margin-bottom: 6%;
                 font-size: 1.4em;
-                font-weight:bold;
+                font-weight: bold;
                 &:last-child {
-                    font-size:1.4em;
-                    color:#666666;
-                    font-weight:500;
+                    font-size: 1.4em;
+                    color: #666666;
+                    font-weight: 500;
                     line-height: 1.6em;
                 }
             }
@@ -169,7 +169,7 @@ body {
 
     }
     .slider {
-        margin-bottom:12%;
+        margin-bottom: 12%;
         position: relative;
         .frame {
             position: absolute;
@@ -180,24 +180,40 @@ body {
             align-items: center;
             justify-content: center;
             img {
-                width:10.9%;
+                width: 10.9%;
             }
         }
         .slides {
             position: absolute;
-            height:100%;
-            $widthh:271%;
-            width:$widthh;
+            height: 100%;
+            $widthh: 300%;
+            width: $widthh;
             left: 50%-($widthh/2);
             display: flex;
             align-items: center;
-            justify-content:space-between;
+            justify-content: space-between;
             z-index: 2;
             img {
-                width:3.71%;
-//                box-shadow:  2px 2px 4px rgba( 0, 0, 0, 0.5 );
+                width: 3.34%;
+                margin-top: -0.005% //                box-shadow:  2px 2px 4px rgba( 0, 0, 0, 0.5 );
             }
 
+        }
+    }
+    .controlls {
+        display: flex;
+        justify-content: center;
+        .left,
+        .right {
+            font-size: 2em;
+            font-weight: 700;
+        }
+        div:hover {
+            color: $red;
+        }
+        p {
+            margin-left: 5%;
+            margin-right: 5%;
         }
     }
 }

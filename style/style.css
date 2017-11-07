@@ -146,11 +146,24 @@ body {
     .block2 .slider .slides {
       position: absolute;
       height: 100%;
-      width: 271%;
-      left: -85.5%;
+      width: 300%;
+      left: -100%;
       display: flex;
       align-items: center;
       justify-content: space-between;
       z-index: 2; }
       .block2 .slider .slides img {
-        width: 3.71%; }
+        width: 3.34%;
+        margin-top: -0.005%; }
+  .block2 .controlls {
+    display: flex;
+    justify-content: center; }
+    .block2 .controlls .left,
+    .block2 .controlls .right {
+      font-size: 2em;
+      font-weight: 700; }
+    .block2 .controlls div:hover {
+      color: #f64340; }
+    .block2 .controlls p {
+      margin-left: 5%;
+      margin-right: 5%; }
